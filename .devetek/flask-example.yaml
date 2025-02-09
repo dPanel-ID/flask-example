@@ -1,0 +1,24 @@
+version: v0.0.1-alpha.0
+
+setup:
+  language:
+    name: python
+    version: 3.10.4
+
+build:
+  target:
+    machine:
+      workdir: .
+      steps:
+        - name: "Build Flask Example"
+          command:
+            - pip install -r requirements.txt 
+
+run:
+  name: flask-example
+  description: Python Flask Example
+  command: uwsgi --http 127.0.0.1:8000 --master -p 4 -w main:app
+  port: 5000
+  environment:
+    - key: PORT
+      value: 5000
