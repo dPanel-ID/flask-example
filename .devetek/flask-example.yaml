@@ -12,6 +12,8 @@ build:
       steps:
         - name: "Build Flask Example"
           command:
+            - python -m venv .venv
+            - . .venv/bin/activate
             - pip install -r requirements.txt 
 
 run:
