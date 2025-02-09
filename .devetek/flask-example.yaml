@@ -17,7 +17,7 @@ build:
 run:
   name: flask-example
   description: Python Flask Example
-  command: uwsgi --http 127.0.0.1:8000 --master -p 4 -w main:app
+  command: uwsgi --http 127.0.0.1:5000 --master -p 4 -w main:app
   port: 5000
   environment:
     - key: PORT
