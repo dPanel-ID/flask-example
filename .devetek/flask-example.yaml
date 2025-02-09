@@ -23,8 +23,8 @@ run:
   config:
     - key: KillSignal
       value: SIGQUIT
-    - key: Type
-      value: notify
+    # - key: Type
+    #   value: notify
   port: 5000
   environment:
     - key: PORT
