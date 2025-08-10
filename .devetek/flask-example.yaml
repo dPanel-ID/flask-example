@@ -23,7 +23,7 @@ run:
   config:
     - key: KillSignal
       value: SIGQUIT
-  port: 5000
+  port: 5001
   environment:
     - key: PORT
-      value: 5000
+      value: 5001
